@@ -1,0 +1,8 @@
+# name         switch               type  values               [conditions]
+population_size "--population_size " i    (10, 50)
+crossover_rate  "--crossover_rate "  r    (0.1, 1.0)
+mutation_rate   "--mutation_rate "   r    (0.05, 0.2)
+generations     "--generations "     i    (10, 50)
+
+[forbidden]
+

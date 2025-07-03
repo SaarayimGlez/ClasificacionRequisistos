@@ -1,0 +1,42 @@
+# irace Scenario Configuration for Genetic Algorithm Tuning
+# ========================================================
+
+# Required Parameters
+trainInstancesDir = "C:/Users/saara/Desktop/Proyecto"
+trainInstancesFile = "instances.txt"
+parameterFile = "parameters.txt"
+targetRunner = "Main.py"
+targetRunnerLauncher = "python"  # or full path to python executable
+
+# Budget Settings
+maxExperiments = 50  # Total target algorithm runs
+minExperiments = 1   # Minimum runs before stopping
+# Alternative time budget (uncomment if preferred):
+# maxTime = 3600  # 1 hour max in seconds
+
+# Execution Settings
+parallel = 1           # Number of parallel runs
+deterministic = 0      # 1 if your GA is deterministic (same seed = same result)
+debugLevel = 3         # 0-3 (higher = more verbose)
+softRestart <- FALSE
+
+# Racing Settings
+elitist = 1            # Use elitist irace (recommended)
+elitistNewInstances = 3
+firstTest = 5          # First elimination after 5 instances
+eachTest = 1           # Test after each subsequent instance
+confidence = 0.95      # Statistical test confidence level
+
+# Adaptive Capping (for time optimization)
+capping = 1            # Enable adaptive capping
+boundMax = 300         # Maximum execution time (seconds)
+boundType = "candidate"
+cappingType = "median"
+
+# Testing Configuration
+testNbElites = 3       # Number of best configurations to test
+testIterationElites = 1 # Test elites from each iteration
+
+# Output Settings
+logFile = "irace_output.Rdata"
+execDir = "./execdir"  # Directory for execution files

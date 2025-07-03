@@ -1,2 +1,2 @@
-# ClasificacionRequisistos
-Proyecto de computo evolutivo en donde se realiza la clasificación de requisitos mediante DeepGA y neuroevolución
+# ComputoEvolutivo
+En este repositorio se encuentra el proyecto de cómputo evolutiv
